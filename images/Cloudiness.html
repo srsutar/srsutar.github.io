@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
+  <title>Latitude Weather Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+		<div class="container-fluid">
+      <div class = "row">
+        <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+          </button>
+          <div class="col-xs-7 phone-nav">
+            <a class="navbar-brand" href="index.html" id="logo">Lattitude</a>
+          </div>
+       </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav navbar-right navbar-right-custom">
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li><a href="Max Temperature.html">Max Temperature</a></li>
+                <li><a href="Humidity.html">Humidity</a></li>
+                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                <li><a href="Windspeed.html">Wind Speed</a></li>
+             </ul>
+           </li>
+           <li><a href="Comparisons.html">Comparisons</a></li>
+           <li><a href="data.html">data</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="description-content">
+          <h1 class="description-header">Cloudiness</h1>
+          <hr class="description-hr"/>
+          <img src="Fig2.png" alt="" class="img-responsive"/>
+          <p>The analysis shows an irregular trend occurring because although there is a cluster of points towards 100% humidity, there is a tiny band of dots at 0% humidity. Near 0 degrees latitude, we see a cluster closer to 100% humidity. This figure doesn’t provide us enough analysis to make more concluding statements.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <hr />
+            <div id="images">
+              <a href="Max_Temperature.html"><img src="Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+              <a href="Humidity.html"><img src="Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo active"></a>
+              <a href="Cloudiness.html"><img src="Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+              <a href="Windspeed.html"><img src="Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+            </div>
+          </div>
+        </section>
+        </div>
+    </section>
+   </div>
+   </body>
+</html>
